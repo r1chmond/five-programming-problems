@@ -15,7 +15,7 @@ def test_combine_list_asymmetric_lists():
 
 def test_combine_list_symmetric_lists():
     assert main.combine_list([5,4,6], [2,5,-8]) == [5,2,4,5,6,-8]
-    assert main.combine_list([-2,5,8], [-5,4,6]) == [-2,5,-5,4,8,6]
+    assert main.combine_list([-2,5,8], [-5,4,6]) == [-2,-5,5,4,8,6]
 
 def test_combine_list_repeated_elements():
     assert main.combine_list([1,1,1], [1,1,1]) == [1,1,1,1,1,1]
