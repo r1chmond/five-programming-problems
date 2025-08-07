@@ -59,6 +59,10 @@ Run all tests
 pytest
 ```
 
+## My Solution
+
+Check out my solution on [my-solution](https://github.com/r1chmond/five-programming-problems/blob/my-solution/src/main.py) branch
+
 ## Commentary
 
 I am slow as a snail.
