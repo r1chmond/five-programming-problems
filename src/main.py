@@ -96,7 +96,22 @@ def largest_formed_number(nums: List[int]) -> int:
 
 # Problem 5
 def all_possible_expressions() -> List[str]:
-    pass
+    nums = "123456789"
+    result = []
+
+    def backtrack(index: int, expr: str) -> None:
+        if index == len(nums):
+            if eval(expr) == 100:
+                result.append(expr)
+            return
+        
+        ops = ["+", "-", ""] # possible operations are add, subtract and concatenate
+
+        for op in ops:
+            backtrack(index+1, expr + op + nums[index])
+    
+    backtrack(1, nums[0])
+    return result
 
 
         
